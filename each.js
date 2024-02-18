@@ -12,5 +12,7 @@ function callback(element) {
 }
 
 
-arr.each(callback)
+arr.each(el => {
+  return el * 3
+})
 console.log(arr);
