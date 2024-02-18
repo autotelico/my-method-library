@@ -12,5 +12,6 @@ Array.prototype.removeAt = function(index) {
 }
 
 // Tests method
-let r = arr.removeAt(2)
+arr.removeAt(0)
+arr.removeAt(3)
 console.log(arr);
