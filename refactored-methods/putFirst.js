@@ -1,3 +1,5 @@
+// The putFirst() method is a recreation of the unshift() method from scratch.
+
 const arr = [1, 2, 3, 4, 5];
 
 Array.prototype.putFirst = function (value) {
@@ -9,5 +11,6 @@ Array.prototype.putFirst = function (value) {
     console.log(this);
 };
 
+// Tests method
 let r = arr.putFirst('I am first');
 console.log(arr);

@@ -1,3 +1,5 @@
+// the mapValues() method is a recreation of the map() method from scratch.
+
 const arr = [1, 2, 3, 4, 5];
 
 Array.prototype.mapValues = function(cb) {

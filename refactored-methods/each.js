@@ -1,3 +1,5 @@
+// The each() method is a recreation of the forEach() method from scratch.
+
 const arr = [1, 2, 3, 4, 5];
 
 Array.prototype.each = function (cb) {
@@ -7,12 +9,10 @@ Array.prototype.each = function (cb) {
   return this
 };
 
+// Tests method
 function callback(element) {
   return element * 2;
 }
 
-
-arr.each(el => {
-  return el * 3
-})
+arr.each(callback)
 console.log(arr);

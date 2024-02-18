@@ -1,3 +1,5 @@
+// The removeFirst() method removes the first array element.
+
 const arr = [1, 2, 3, 4, 5];
 
 Array.prototype.removeFirst = function() {
@@ -7,5 +9,6 @@ Array.prototype.removeFirst = function() {
     this.length = this.length - 1
 }
 
+// Tests method
 arr.removeFirst()
 console.log(arr);
