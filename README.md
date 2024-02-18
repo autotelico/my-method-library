@@ -1,4 +1,7 @@
-# About the library
+## About the library
+This is an array methods library created by me.
+
+## Reason 
 JavaScript has many useful array methods, to which I'd like to suggest improvements and new methods I've come up with.
 
 ## What you will find
