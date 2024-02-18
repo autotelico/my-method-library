@@ -1,13 +1,18 @@
 // REASON:
-// JavaScript's sort() method does not behave as in other programming
-// languages like Ruby, where it sorts numbers according to their value,
-// and it requires a callback function to sort numbers the same way.
-// Else, it uses Unicode for the calculation.
+// JavaScript's sort() method uses Unicode by default to sort the array
+// values. If a callback is passed, it sorts using the callback's instructions.
+
+// While it has its value, the sort() method may surprise developers
+// with programming backgrounds in other languages
+// like Ruby, where the method sorts numbers according to their numerical
+// value, with no need for callbacks.
 
 // MY PROPOSAL:
-// Make it so arrays can sort themselves in ascending/descending order
-// without requiring callbacks for that purpose.
-// The method will make things more intuitive.
+// The toDescending() method makes it so arrays can
+// be sorted in descending order, without requiring 
+// callbacks for that purpose.
+// The method will make things more intuitive for people with a Ruby or
+// other language background.
 
 // Below, the method toDescending() sorts the array
 // in descending order:
