@@ -15,7 +15,8 @@ Array.prototype.getLargestnumbersToReturn = function (numbersToReturn) {
     throw new Error('The provided argument is not a number.');
   }
   // Calculation starts here
-  const sortedArray = this.sort((a, b) => (a < b ? 1 : -1));
+  const arrayCopy = this.slice();
+  const sortedArray = arrayCopy.sort((a, b) => (a < b ? 1 : -1));
   const result = [];
   for (let i = 0; i < numbersToReturn; i++) {
     result.push(sortedArray[i]);
@@ -25,3 +26,4 @@ Array.prototype.getLargestnumbersToReturn = function (numbersToReturn) {
 
 // Try it! Experiment with different arguments.
 console.log(exampleNumberList.getLargestnumbersToReturn(3));
+console.log(exampleNumberList); // Original array is unchanged.

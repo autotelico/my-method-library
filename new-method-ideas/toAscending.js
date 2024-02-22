@@ -26,11 +26,12 @@ Array.prototype.toAscending = function () {
       throw new Error('The array must only contain number elements.');
     }
   }
-
-  return this.sort((firstValue, secondValue) => {
+  const arrayCopy = this.slice();
+  return arrayCopy.sort((firstValue, secondValue) => {
     return firstValue < secondValue ? -1 : 1;
   });
 };
 
 // Method test
 console.log(exampleArray.toAscending());
+console.log(exampleArray); // Original array is unchanged.

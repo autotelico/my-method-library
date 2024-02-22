@@ -8,7 +8,6 @@ Array.prototype.putFirst = function (value) {
         this[i] = this[i - 1];
     }
     this[0] = value;
-    console.log(this);
 };
 
 // Tests method
