@@ -1,5 +1,5 @@
 ## About the library
-This is an array methods library created by me.
+This is an array methods library created by me, which will be release on npm.
 
 ## Reason 
 JavaScript has many useful array methods, to which I'd like to suggest improvements and new methods I've come up with.
